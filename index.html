@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Bankist System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Good Afternoon !</h1>
+            <div class="login-box">
+                <input type="text" name="username" placeholder="User">
+                <input type="password" name="pin" placeholder="PIN">
+                <button>→</button>
+            </div>
+        </header>
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+            <div class="balance">
+                <h2>₹1,60,000.00</h2>
+                <p>Current balance</p>
+            </div>
+
+            <div class="cards">
+                <div class="card transfer">
+                    <h3>Transfer Money</h3>
+                    <input type="text" name="recipient" placeholder="Transfer to">
+                    <input type="number" name="amount" placeholder="Amount">
+                    <button>➜</button>
+                </div>
+
+                <div class="card loan">
+                    <h3>Request Loan</h3>
+                    <input type="number" name="loan-amount" placeholder="Amount">
+                    <button>➜</button>
+                </div>
+            </div>
+
+            <div class="transaction-history">
+                <h3>Transaction History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Deposit</td>
+                            <td>Today</td>
+                            <td>₹5,000.00</td>
+                        </tr>
+                        <tr>
+                            <td>Withdrawal</td>
+                            <td>28/12/2024</td>
+                            <td>₹300.00</td>
+                        </tr>
+                        <tr>
+                            <td>Deposit</td>
+                            <td>25/12/2024</td>
+                            <td>₹8,500.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <!-- Welcome Modal -->
+    <div class="modal" id="welcomeModal" style="display: none;">
+        <div class="modal-content">
+            <h2>Welcome to Modern Bankist, <span id="user-name"></span>!</h2>
+            <p>We're glad to have you back. Enjoy managing your finances!</p>
+
+            <button class="got-it-button">Got it!</button>
+
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
