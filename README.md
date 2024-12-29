@@ -46,8 +46,9 @@ Welcome to **Banking Dashboard**, the sleek and intuitive app designed to give y
 - **Text Editor** (Visual Studio Code, Sublime Text, etc.)
 
 ### 🌐 Live Demo
-You can view the banking system in action by visiting the following link:
-https://nakul-xd.github.io/banking-system/
+-You can view the banking system in action by visiting the following link:
+
+-https://nakul-xd.github.io/banking-system/
 
                              
  
