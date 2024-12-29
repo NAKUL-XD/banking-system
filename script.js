@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Modal Elements
     const modal = document.getElementById("welcomeModal");
-    const closeModalButton = modal.querySelector(".close");
-    const gotItButton = modal.querySelector(".got-it-button");
+    const closeModalButton = modal ? modal.querySelector(".close") : null;
+    const gotItButton = modal ? modal.querySelector(".got-it-button") : null;
 
     // Utility Functions
     const updateBalance = (amount) => {
@@ -100,14 +100,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Close Modal when "Got it!" button is clicked
-    gotItButton.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
+    if (gotItButton) {
+        gotItButton.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    }
 
     // Close Modal when the close button (x) is clicked
-    closeModalButton.addEventListener("click", () => {
-        modal.style.display = "none";
-    });
+    if (closeModalButton) {
+        closeModalButton.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    }
 
     // Close Modal if clicked outside of modal content
     window.addEventListener("click", (event) => {
